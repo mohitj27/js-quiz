@@ -32,7 +32,9 @@ var q5 =document.forms["quizForm"]["q5"].value;
 	  score++;
   }
   var results = document.getElementById('results');
-  results.innerHTML='<h3>You scored<span>'+score+</span>out of <span>+total+'</span></h3>';
-  alert('You scored' +score+ 'out of' +total);
-return false;
+  results.innerHTML='<h1 style="text-align: center;">You scored <span>'+score+'</span> out of <span>'+total+'</span></h1>';
+  alert('You scored ' +score+ ' out of' +total);
+  document.getElementById('userForm').style.display = 'none';
+  //window.location.reload();
+  return false;
 }
